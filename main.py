@@ -2,7 +2,7 @@ from TwitterAPI import TwitterAPI
 import threading
 import time
 import json
-import os.path
+import os
 import sys
 
 # Load our configuration from the JSON file.
@@ -10,10 +10,10 @@ with open('config.json') as data_file:
         data = json.load(data_file)
 
 # These vars are loaded in from config.
-consumer_key = data["consumer-key"]
-consumer_secret = data["consumer-secret"]
-access_token_key = data["access-token-key"]
-access_token_secret = data["access-token-secret"]
+consumer_key = os.environ['CONSUMER_KEY']
+consumer_secret = os.environ['CONSUMER_SECRET']
+access_token_key = os.environ['ACCESS_TOKEN_KEY']
+access_token_secret = os.environ['ACCESS_TOKEN_SECRET']
 retweet_update_time = data["retweet-update-time"]
 scan_update_time = data["scan-update-time"]
 rate_limit_update_time = data["rate-limit-update-time"]

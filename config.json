@@ -1,0 +1,15 @@
+{
+        "search-queries": ["#giveaway", "giveaway", "retweet and you could win", "rt for your chance to win", "#giveawayalert", "rt to win", "#rttowin", "#sweepstakes", "win a nintendo", "win a ps4", "win a switch", "sweepstakes", "retweet to win"],
+        "follow-keywords": [" follow ", " follower ", "following"],
+        "fav-keywords": [" fav ", " favorite "],
+        "scan-update-time": 83,
+        "retweet-update-time": 83,
+        "rate-limit-update-time": 83,
+        "min-ratelimit":20,
+        "min-ratelimit-retweet":96,
+        "min-ratelimit-search":94,
+	"consumer-key": "",
+	"consumer-secret": "",
+	"access-token-key": "",
+	"access-token-secret": ""
+}
