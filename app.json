@@ -1,0 +1,29 @@
+{
+  "name": "Twibot",
+  "description": "Twitter giveaway bot",
+  "repository": "https://github.com/gurpreetsingh00885/twibot",
+  "env": {
+    "CONSUMER_KEY": {
+      "description": "Twitter api key"
+    },
+    "CONSUMER_SECRET": {
+      "description": "Twitter api secret"
+    },
+    "ACCESS_TOKEN_KEY": {
+      "description": "Twitter access token key"
+    },
+    "ACCESS_TOKEN_SECRET": {
+      "description": "Twitter access token secret"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
